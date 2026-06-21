@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,22 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.saucedemo.tests.CheckoutTests" class="method navigator-link" hash-for-method="testCheckoutWithInterruptedFlow">testCheckoutWithInterruptedFlow</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.saucedemo.tests.LoginTests" class="method navigator-link" hash-for-method="testInvalidLoginDataDriven({username=locked_out_user, password=secret_sauce, expectedErrorMessage=Epic sadface: Sorry, this use...)">testInvalidLoginDataDriven({username=locked_out_user, password=secret_sauce, expectedErrorMessage=Epic sadface: Sorry, this use...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.saucedemo.tests.LoginTests" class="method navigator-link" hash-for-method="testInvalidLoginDataDriven({username=standard_user, password=wrong_password, expectedErrorMessage=Epic sadface: Username and pa...)">testInvalidLoginDataDriven({username=standard_user, password=wrong_password, expectedErrorMessage=Epic sadface: Username and pa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.saucedemo.tests.LoginTests" class="method navigator-link" hash-for-method="testInvalidLoginDataDriven({username=invalid_user, password=invalid_password, expectedErrorMessage=Epic sadface: Username and p...)">testInvalidLoginDataDriven({username=invalid_user, password=invalid_password, expectedErrorMessage=Epic sadface: Username and p...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.saucedemo.tests.LoginTests" class="method navigator-link" hash-for-method="testSuccessfulLogin">testSuccessfulLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -121,16 +136,46 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.saucedemo.tests.CheckoutTests</span>
+              <span class="class-name">com.saucedemo.tests.LoginTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCheckoutWithInterruptedFlow">
-                  </a> <!-- testCheckoutWithInterruptedFlow -->
-                  <span class="method-name">testCheckoutWithInterruptedFlow</span>
+                  <a name="testInvalidLoginDataDriven({username=locked_out_user, password=secret_sauce, expectedErrorMessage=Epic sadface: Sorry, this use...)">
+                  </a> <!-- testInvalidLoginDataDriven({username=locked_out_user, password=secret_sauce, expectedErrorMessage=Epic sadface: Sorry, this use...) -->
+                  <span class="method-name">testInvalidLoginDataDriven</span>
+                  <span class="parameters">({username=locked_out_user, password=secret_sauce, expectedErrorMessage=Epic sadface: Sorry, this user has been locked out.})</span>
                   <em>
-(Verify checkout process with interrupted flow (cancel and add more items))                  </em>
+(Verify login fails with invalid credentials via JSON data provider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLoginDataDriven({username=standard_user, password=wrong_password, expectedErrorMessage=Epic sadface: Username and pa...)">
+                  </a> <!-- testInvalidLoginDataDriven({username=standard_user, password=wrong_password, expectedErrorMessage=Epic sadface: Username and pa...) -->
+                  <span class="method-name">testInvalidLoginDataDriven</span>
+                  <span class="parameters">({username=standard_user, password=wrong_password, expectedErrorMessage=Epic sadface: Username and password do not match any user in this service})</span>
+                  <em>
+(Verify login fails with invalid credentials via JSON data provider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLoginDataDriven({username=invalid_user, password=invalid_password, expectedErrorMessage=Epic sadface: Username and p...)">
+                  </a> <!-- testInvalidLoginDataDriven({username=invalid_user, password=invalid_password, expectedErrorMessage=Epic sadface: Username and p...) -->
+                  <span class="method-name">testInvalidLoginDataDriven</span>
+                  <span class="parameters">({username=invalid_user, password=invalid_password, expectedErrorMessage=Epic sadface: Username and password do not match any user in this service})</span>
+                  <em>
+(Verify login fails with invalid credentials via JSON data provider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulLogin">
+                  </a> <!-- testSuccessfulLogin -->
+                  <span class="method-name">testSuccessfulLogin</span>
+                  <em>
+(Verify successful login with valid credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,13 +190,8 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
-    &lt;method-selectors&gt;
-      &lt;method-selector&gt;
-        &lt;selector-class name=&quot;org.apache.maven.surefire.testng.utils.MethodSelector&quot; priority=&quot;10000&quot;/&gt;
-      &lt;/method-selector&gt;
-    &lt;/method-selectors&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.saucedemo.tests.CheckoutTests&quot;/&gt;
+      &lt;class name=&quot;com.saucedemo.tests.LoginTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -191,16 +231,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCheckoutWithInterruptedFlow')
-data.setCell(0, 2, 'com.saucedemo.tests.CheckoutTests')
-data.setCell(0, 3, 12596);
+data.setCell(0, 1, 'testInvalidLoginDataDriven')
+data.setCell(0, 2, 'com.saucedemo.tests.LoginTests')
+data.setCell(0, 3, 3102);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testInvalidLoginDataDriven')
+data.setCell(1, 2, 'com.saucedemo.tests.LoginTests')
+data.setCell(1, 3, 928);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testSuccessfulLogin')
+data.setCell(2, 2, 'com.saucedemo.tests.LoginTests')
+data.setCell(2, 3, 510);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testInvalidLoginDataDriven')
+data.setCell(3, 2, 'com.saucedemo.tests.LoginTests')
+data.setCell(3, 3, 448);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -215,18 +267,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.saucedemo.tests.CheckoutTests</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testCheckoutTotalCalculation</span>
-                <br/>
-                <span class="ignored-method-name">testSuccessfulCheckoutProcess</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Surefire_suite" class="panel">
@@ -235,22 +278,54 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.saucedemo.tests.CheckoutTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.saucedemo.tests.LoginTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">10097 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testCheckoutWithInterruptedFlow</span>
-                <span class="method-start">10522 ms</span>
+                <span class="method-name">testInvalidLoginDataDriven({username=locked_out_user, password=secret_sauce, expectedErrorMessage=Epic sadface: Sorry, this use...)</span>
+                <span class="method-start">16914 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23132 ms</span>
+                <span class="method-start">17860 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">18045 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLoginDataDriven({username=standard_user, password=wrong_password, expectedErrorMessage=Epic sadface: Username and pa...)</span>
+                <span class="method-start">20034 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">23138 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">23275 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLoginDataDriven({username=invalid_user, password=invalid_password, expectedErrorMessage=Epic sadface: Username and p...)</span>
+                <span class="method-start">26590 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">27041 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">27184 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulLogin</span>
+                <span class="method-start">30051 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30563 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

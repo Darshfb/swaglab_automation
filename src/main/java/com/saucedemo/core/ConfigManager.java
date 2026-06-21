@@ -17,6 +17,11 @@ public class ConfigManager {
     }
 
     public static String getProperty(String key) {
+        // System property overrides file property (crucial for CI/CD parameterization)
+        String sysProp = System.getProperty(key);
+        if (sysProp != null && !sysProp.isEmpty()) {
+            return sysProp;
+        }
         return properties.getProperty(key);
     }
 }

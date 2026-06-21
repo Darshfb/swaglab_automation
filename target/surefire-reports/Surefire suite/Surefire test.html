@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jun 21 08:21:22 AST 2026</td>
+<td>Started on:</td><td>Sun Jun 21 08:35:58 AST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23408 ms)</td>
+<tr><td>Total time:</td><td>31 seconds (31521 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,10 +76,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.saucedemo.tests.CheckoutTests.testCheckoutWithInterruptedFlow()'><b>testCheckoutWithInterruptedFlow</b><br>Test class: com.saucedemo.tests.CheckoutTests<br>Test method: Verify checkout process with interrupted flow (cancel and add more items)</td>
+<td title='com.saucedemo.tests.LoginTests.testSuccessfulLogin()'><b>testSuccessfulLogin</b><br>Test class: com.saucedemo.tests.LoginTests<br>Test method: Verify successful login with valid credentials</td>
 <td></td>
-<td>12</td>
-<td>com.saucedemo.tests.CheckoutTests@1eea9d2d</td></tr>
+<td>0</td>
+<td>com.saucedemo.tests.LoginTests@5b3f3ba0</td></tr>
+<tr>
+<td title='com.saucedemo.tests.LoginTests.testInvalidLoginDataDriven()'><b>testInvalidLoginDataDriven</b><br>Test class: com.saucedemo.tests.LoginTests<br>Test method: Verify login fails with invalid credentials via JSON data provider<br>Parameters: {username=locked_out_user, password=secret_sauce, expectedErrorMessage=Epic sadface: Sorry, this user has been locked out.}</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.LoginTests@5b3f3ba0</td></tr>
+<tr>
+<td title='com.saucedemo.tests.LoginTests.testInvalidLoginDataDriven()'><b>testInvalidLoginDataDriven</b><br>Test class: com.saucedemo.tests.LoginTests<br>Test method: Verify login fails with invalid credentials via JSON data provider<br>Parameters: {username=standard_user, password=wrong_password, expectedErrorMessage=Epic sadface: Username and password do not match any user in this service}</td>
+<td></td>
+<td>3</td>
+<td>com.saucedemo.tests.LoginTests@5b3f3ba0</td></tr>
+<tr>
+<td title='com.saucedemo.tests.LoginTests.testInvalidLoginDataDriven()'><b>testInvalidLoginDataDriven</b><br>Test class: com.saucedemo.tests.LoginTests<br>Test method: Verify login fails with invalid credentials via JSON data provider<br>Parameters: {username=invalid_user, password=invalid_password, expectedErrorMessage=Epic sadface: Username and password do not match any user in this service}</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.tests.LoginTests@5b3f3ba0</td></tr>
 </table><p>
 </body>
 </html>

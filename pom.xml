@@ -72,6 +72,42 @@
             <version>${faker.version}</version>
         </dependency>
 
+        <!-- Jackson for JSON Data-Driven Testing -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.17.1</version>
+        </dependency>
+
+        <!-- RestAssured for Hybrid API+UI Authentication & Backend Testing -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.4.0</version>
+        </dependency>
+
+        <!-- JSON Schema Validator for Contract Testing -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>5.4.0</version>
+        </dependency>
+
+        <!-- Allure RestAssured for API Observability -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-rest-assured</artifactId>
+            <version>${allure.version}</version>
+        </dependency>
+
+        <!-- Lombok for API Payload Data Builders -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.20.1</version>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- Logback for Logging -->
         <dependency>
             <groupId>ch.qos.logback</groupId>

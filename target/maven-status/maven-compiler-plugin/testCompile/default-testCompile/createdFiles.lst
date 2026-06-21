@@ -1,5 +1,10 @@
 com\saucedemo\tests\CheckoutTests.class
-com\saucedemo\tests\InventoryTests.class
-com\saucedemo\tests\CartTests.class
+com\saucedemo\listeners\AnnotationTransformer.class
 com\saucedemo\base\BaseTest.class
 com\saucedemo\tests\LoginTests.class
+com\saucedemo\listeners\TestListener.class
+com\saucedemo\dataproviders\JsonReader$1.class
+com\saucedemo\dataproviders\JsonReader.class
+com\saucedemo\listeners\RetryAnalyzer.class
+com\saucedemo\tests\InventoryTests.class
+com\saucedemo\tests\CartTests.class

@@ -1,4 +1,8 @@
 C:\Users\sasal\Desktop\automation testing\projects\saucedemo\src\test\java\com\saucedemo\base\BaseTest.java
+C:\Users\sasal\Desktop\automation testing\projects\saucedemo\src\test\java\com\saucedemo\dataproviders\JsonReader.java
+C:\Users\sasal\Desktop\automation testing\projects\saucedemo\src\test\java\com\saucedemo\listeners\AnnotationTransformer.java
+C:\Users\sasal\Desktop\automation testing\projects\saucedemo\src\test\java\com\saucedemo\listeners\RetryAnalyzer.java
+C:\Users\sasal\Desktop\automation testing\projects\saucedemo\src\test\java\com\saucedemo\listeners\TestListener.java
 C:\Users\sasal\Desktop\automation testing\projects\saucedemo\src\test\java\com\saucedemo\tests\CartTests.java
 C:\Users\sasal\Desktop\automation testing\projects\saucedemo\src\test\java\com\saucedemo\tests\CheckoutTests.java
 C:\Users\sasal\Desktop\automation testing\projects\saucedemo\src\test\java\com\saucedemo\tests\InventoryTests.java
