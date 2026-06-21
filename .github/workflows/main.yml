@@ -8,6 +8,11 @@ on:
   schedule:
     - cron: '0 2 * * *' # Run nightly at 2 AM
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   automation-execution:
     name: Execute E2E & API Suite
