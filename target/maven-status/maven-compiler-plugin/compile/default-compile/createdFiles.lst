@@ -1,0 +1,10 @@
+com\saucedemo\pages\CheckoutOverviewPage.class
+com\saucedemo\pages\BasePage.class
+com\saucedemo\pages\LoginPage.class
+com\saucedemo\pages\InventoryPage.class
+com\saucedemo\core\ConfigManager.class
+com\saucedemo\pages\CheckoutInfoPage.class
+com\saucedemo\core\BrowserFactory.class
+com\saucedemo\core\DriverManager.class
+com\saucedemo\pages\CartPage.class
+com\saucedemo\pages\CheckoutCompletePage.class

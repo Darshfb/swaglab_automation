@@ -1,0 +1,5 @@
+com\saucedemo\tests\CheckoutTests.class
+com\saucedemo\tests\InventoryTests.class
+com\saucedemo\tests\CartTests.class
+com\saucedemo\base\BaseTest.class
+com\saucedemo\tests\LoginTests.class
